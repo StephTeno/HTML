@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tablas y similares</title>
+    </head>
+    <body>
+        <!-- Listas -->
+        <h2>Etiquetas de listas </h2>
+        <p>Los elementos se enumeran con la etiqueta "li" que es contenida por las etiquetas "ol" y "ul"</p>
+        <p>Y estas pueden tener como atributos los globales como el <b>"accesskey"</b>, <b>"tabindex"</b>, <b>"title"</b> y tambien tiene uno propio como es el <b>"value"</b> esto hace que los elementos de la lista tengan un valor</p>
+
+        <h3>Listas ordenadas "ol"</h3>
+        <p>Tiene el atributo <b>"type"</b> que especifica el tipo de enumeracion, colocando  <i>"1"</i> para numeros, <i>"a"</i> para letras minusculas, <i>"A"</i> para letras mayusculas, <i>"i"</i> para numeros romanos minusculos, <i>"I"</i> para numeros romanos mayusculos</p>
+        <p>Tambien tiene el atributo <b>"start"</b> que especifica el numero con el cual se comenzara la enumeracion</p>
+        <p>Esta el <b>reversed</b> que si se establece, la lista de elementos para a ser inversa</p>
+        <ol type="a", reversed, start="6">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+        </ol>
+
+        <h3>Listas desordenadas "ul"</h3>
+        <p>Tiene el atributo <b>"type"</b> que especifica el tipo de simbolo que tendra la enumeracion, colocando  <i>"disc"</i> que es un circulo relleno, <i>"circle"</i> el contorno de un circulo y <i>"square"</i> que es un cuadrado</p>
+        <ul type="circle">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+        </ul>
+
+        <h2>Tablas</h2>
+        <p>Toda la tabla se contiene en una etiqueta llamada "table", cuyas filas se etiquetan "tr"</p>
+        <p>Esta tambien puede ser titulada con la ayuda de la etiqueta "caption" que se agrega antes de "thead" pero despues de la etiqueta contenedora "table", tiene como unico atributo el <b>"align"</b> que pueden ser <i>"top"</i> que es la parte superior, <i>"bottom"</i> es la parte interior</p>
+        <p>Se puede separar semanticamente en encabezado, cuerpo y pie de tabla</p>
+        <p>El encabezado tiene de etiqueta "thead", que contiene una "tr" como unica fila y "th" segun la cantidad de columnas que se desean</p>
+        <p>La etiqueta "colgroup" se utiliza para agrupar varias columnas de una tabla para asi establecer estilos y comportamienos similares, se coloca antes del "thead" o "tbody", tiene como atributos <b>"span"</b> que especifica el numero de columnas que se incluyen en el grupo</p>
+        <table>
+            <caption align="top">Titulo de la tabla</caption>
+            <colgroup span="2"></colgroup>
+            <thead>
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Datos1</td>
+                    <td>Datos2</td>
+                </tr>
+                <tr>
+                    <td>Datos3</td>
+                    <td>Datos4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Definiciones</h2>
+        <p>La etiqueta "dl" es la contenedora para crear una lista de definicion, que se compone de terminos con etiqueta "dt" y sus definiciones correspondientes con la etiqueta "dd" siendo que despues de una "dt", viene su "dd"</p>
+        <p>Tiene como atributo el <b>"compact"</b> que se usa para especificar que la lista debe de contraerse</p>
+        <p>Las definiciones pueden ser etiquetas contenedoras!!!!, se le puede agregar "p", "a", etc.</p>
+        <p>Los terminos tambien pueden ser imagenes</p>
+
+        <h4>Lista de terminos</h4>
+        <dl compact>
+            <dt>Termino 1</dt>
+            <dd>Definicion 1</dd>
+            <dt>Termino 2</dt>
+            <dd>Definicion 2</dd>
+            <dt>Termino 3</dt>
+            <dd>Definicion 3</dd>
+        </dl>
+
+
+        <h2>Descripcion detallada</h2>
+
+        <p>El unico atributo de la etiqueta es <b>"open"</b> eso hace que el contenido de la descripcion este totalmente visible, solamente se puede ocultar dando click</p>
+
+        <details open>
+            <summary>Más información</summary>
+            <p>Aquí se encuentra la información adicional</p>
+        </details>
+        <details>
+            <summary>Aqui mas</summary>
+            <ul>
+                <li>Detalle 1</li>
+                <li>Detalle 2</li>
+            </ul>
+        </details>
+
+
+
+        <br>
+        <br>
+        <a href="Inicio.html" target="_parent" rel="noopener noreferrer">Volver</a>
+    </body>
+</html>
