@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hipervinculo</title>
+  </head>
+  <body id="hola">
+    <section class="Informacion">
+      <h2>Atributos de la etiqueta "a"</h2>
+      <p>
+        Esta puede tener tanto las propias como las globales
+      </p>
+      <ol>
+        <li><b>href: </b>Esta indica a donde se va dirigir al usuario cuando se de clic</li>
+        <li><b>target: </b>Define como se abrra el recurso enlazado, <i>_self</i> abre el recurso en la misma ventana o pestaña, <i>_parent</i> abre el recurso en el marco padre, si lo hay, <i>_blank</i> abre el recurso en una nueva ventana o pestaña y <i>_top</i> abre el recurso en la ventana principal del navegador</li>
+        <li><b>download: </b>Indica que el recurso enlazado debe descargarse en lugar de ser mostrado</li>
+        <li><b>rel: </b>Define la relacion entre la pagina actual y el recurso vinculado. Por ejemplo el <i>nofollow</i> indica que el enlace no debe de ser seguido por los motores de busqueda, otro valor comun es <i>noopener noreferrer</i> que mejora la seguridad del sitio web siendo el noopener indica que la ventana abierta no debe de tener acceso a la ventana que se abrio el enlace, el noreferrer indic que el navegador no debe enviar la indormacion de referencia del sitio web de la pagina actual al vinculado</li>
+        <li><b>type: </b>Indica el tipo de archivo al que se enlaza. Este atributo se usa comunmente para enlazar archivos de imagen, video o audio</li>
+
+      </ol>
+    </section>
+
+    <p>Normalmente los vinculos se hacen con la etiqueta a</p>
+    <a href="#"> Como este ejemplo</a>
+
+    <p>
+      Tambien pueden ir dentro de un contenedor como ahorita en un
+      <a href="#">parrafo</a>
+    </p>
+
+    <p>
+      Puede usarse como un contenedor de otras etiquetas de texto para llenar el
+      texto que se necesita de la etiqueta
+    </p>
+    <a href="#"><h3>Holas</h3></a>
+
+    <p>
+      Puede hacer que una imagen sea clickeable siendo la etiqueta a contenedora
+      de la imagen
+    </p>
+    <a href="#">
+      <img src="arc purple.png" alt="Icono del navegador arc" />
+    </a>
+
+    <p>
+      Incluso se puede usar el atributo title para los
+      <a href="#" title="Awesome">vinculos</a>
+    </p>
+
+    <p>Puedo hacer referencia a otras <a href="Inicio.html">paginas</a></p>
+    <p>Incluso a secciones o algo especifico de otra <a href="Formulario_Inputs.html#myFruit">pagina</a></p>
+    <p>Hasta de la pagina en donde se encuentra el mismo a<a href="#hola">pagina</a></p>
+
+    <p>Con este enlace se puede ir a otros lugares<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">Como por ejemplo este</a></p>
+
+    <p>Puedes hacer que se descargue archivos al presionar el link <a href="arc purple.png" download>Descargar imagen</a></p>
+
+    <p>Puedes hacer que se envie un correo electronico al presional el link <a href="mailto:stephanietenorio2005@gmail.com">Enviar un correo electronico</a></p>
+
+    <p>Tambien para abrir una llamada telefonica <a href="tel:+50575064049">Llame ahora</a></p>
+
+    <br />
+    <br />
+    <a href="Inicio.html" target="_parent" rel="noopener noreferrer">Volver</a>
+  </body>
+</html>
