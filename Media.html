@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <section id="Imagenes">
+        <h2>Imagenes con img</h2>
+        <p>Las imagenes se pueden mostrar bajo la etiqueta de una sola apertura llamada img, estas imagenes pueden ser propias o sacadas del internet pero... <i>¿Como puedo hacerlo?</i> simple, con el atributo propio <b>src</b> que significa source</p>
+
+        <img src="arc purple.png">
+
+        <p>Sin embargo, como buena practica se utiliza el atributo <b>alt</b> ya que proporciona un texto alternativo para el usuario si por alguna razon no pueda verla, es obligatorio colocarlo</p>
+
+        <img src="arc purple.png" alt="Icono purpura del navegador arc">
+
+        <p>El atributo <b>usemap</b> tiene un uso similar al de las anclas pero en este caso para un mapa de imagenes</p>
+    </section>
+
+    <section id="audio_video">
+        <h2>Audios con 'audio' & Videos con 'video'</h2>
+        <p>Los audios y videos se pueden "invocar" bajo la etiqueta de apertura y cierre llamada audio y video respectivamente, estos tienen la gracia que solamente se coloca de forma interna, es decir que hay que tenerlas agregadas dentro de los archivos</p>
+
+        <audio src="src/audio/K.will [No sad song for my broken heart] (Korean translation)KARAOKE .mp3"></audio>
+        <video src="src/video/K.will [No sad song for my broken heart] (Korean translation)KARAOKE 🎤🪩.3gp"></video>
+
+        <p>Este elemento posee varios atributos como ejemplo</p>
+        <ul>
+            <li>
+                <p><b>autoplay: </b>Especifica que el audio/video se reproducira en cuanto se cargue la pagina, esta no tiene valor</p>
+            </li>
+            <li>
+                <p><b>controls: </b>Especifica que los controles del audio/video se deben mostrar, esta no tiene valor</p>
+            </li>
+            <li>
+                <p><b>loop: </b>Especifica que el audio/video se reproducira en bucle ininterrumpidamente, esta no posee valor</p>
+            </li>
+            <li>
+                <p><b>muted: </b>Especifica que la salida de audio/video sebe ser silenciada, solamente hasta que se desmutee con los controles, esta no posee valor</p>
+            </li>
+            <l>
+                <p><b>preload: </b>Especifica si al cargarse la pagina debe empezar a reproducirse automaticamente, esta si tiene que poseer un valor tales como: <i>autoplay, metadata, none</i></p>
+            </l
+            <li>
+                <p><b>src: </b>Especifica la direccion URL o local donde se encuentra el archivo de audio/video, el valor es la URL</p>
+            </li>
+        </ul>
+
+        <!-- Version extendida -->
+        <audio controls>
+            <source src="src/audio/K.will [No sad song for my broken heart] (Korean translation)KARAOKE .mp3" type="audio/mp3">
+            <p>Tu navegador no soporta la etiqueta audio de html5</p>
+        </audio>
+        <video controls>
+            <source src="src/video/K.will [No sad song for my broken heart] (Korean translation)KARAOKE 🎤🪩.3gp" type="video/3gp">
+            <p>Tu navegador no soporta la etiquea video de html5</p>
+        </video>
+
+        <!-- Version reducida -->
+        <audio src="src/audio/K.will [No sad song for my broken heart] (Korean translation)KARAOKE .mp3" controls></audio>
+        <video src="src/video/K.will [No sad song for my broken heart] (Korean translation)KARAOKE 🎤🪩.3gp" controls></video>
+    </section>
+
+
+    <section id="iframe">
+        <h2>Iframe</h2>
+        <p>Un iframe en HTML se utiliza para mostrar una pagina web dentro de otra pagina web simplemente con la etiqueta 'iframe' que poseen su atributo principal el <b>src</b> que es el url donde se va hacer el mini pantallita dentro de la pagina</p>
+
+        <p>Un ejemplo sacado de YouTube el trailer del 3er juego de FNAF</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hdHlIy0W4uU?si=uppSljF3haI06Fmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <p>Y se puede utilizar como marco de destino para un enlace, usando el <i>target</i> del enlace que debe hacer referencia al <i>name</i> del iframe</p>
+
+        <p>Como ejempo:</p>
+        <a href="https://es.wikipedia.org/wiki/CSS" target="iframe_kiko">CSS en Wikipedia</a>
+        <iframe name="iframe_kiko" src="https://es.wikipedia.org/wiki/HTML" width="100%" height="500"></iframe>
+    </section>
+
+    <br>
+    <br>
+    <a href="Inicio.html" target="_parent" rel="noopener noreferrer">Volver</a>
+</body>
+</html>
